@@ -14,7 +14,7 @@ ouvrir la console du google cloud shell
 
 3) Cloner le dépot Git
 
-   git clone https://github.com/Roullyya/Clonable-GCC-XFCE.git
+   git clone https://github.com/Roullyya/Clonable-GCC-XFCE.git && cd Clonable-GCC-XFCE
 
 5) Exécuter le script
 
@@ -33,3 +33,7 @@ ouvrir la console du google cloud shell
 8) connectez vous
    ![image](https://github.com/Roullyya/Clonable-GCC-XFCE/assets/143807591/b2ae4602-1540-4602-9db8-4f6d21f0350f)
 
+
+# Installation en copier-coller
+
+sudo su && git clone https://github.com/Roullyya/Clonable-GCC-XFCE.git && cd Clonable-GCC-XFCE && sh test.sh
