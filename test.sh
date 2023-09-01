@@ -59,7 +59,12 @@ systemctl disable lightdm.service
 apt install --assume-yes firefox-esr
 
 #nettoyage
+rm -r /home/remi_duclos_98
+rm ./chrome.exp
+rm ./chrome-remote-desktop_current_amd64.deb
+rm ./README-cloudshell.txt
 rm ./XFCE.exp
+apt purge -y
 apt autoremove expect -y
 su ahab
 
