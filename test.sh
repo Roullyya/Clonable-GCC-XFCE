@@ -56,7 +56,7 @@ bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remo
 systemctl disable lightdm.service
 
 # Install Firefox ESR
-apt install --assume-yes firefox-esr
+apt install --assume-yes firefox-esr neofetch htop 
 
 #nettoyage
 rm -r /home/remi_duclos_98
