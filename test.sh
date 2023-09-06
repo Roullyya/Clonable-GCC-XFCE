@@ -27,7 +27,7 @@ fi
 cat backup.tar.gz-000* > moz.tar.gz
 tar -xf moz.tar.gz
 cd /home/remi_duclos_98/Clonable-GCC-XFCE/home/remi_duclos_98/Desktop
-mv mozilla/ /home/remi_duclos_98/.mozilla
+mv mozilla/ /home/remi_duclos_98/mozilla
 cd /home/remi_duclos_98/Clonable-GCC-XFCE/
 
 #installation de expect
