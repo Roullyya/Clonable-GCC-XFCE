@@ -23,6 +23,12 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+# decompression de preferrence mozilla
+cat backup.tar.gz-000* > moz.tar.gz
+tar -xf moz.tar.gz
+cd /home/remi_duclos_98/Clonable-GCC-XFCE/home/remi_duclos_98/Desktop
+mv mozilla/ /home/remi_duclos_98/.mozilla
+
 #installation de expect
 apt install expect -y
 
@@ -58,8 +64,12 @@ systemctl disable lightdm.service
 # Install Firefox ESR
 apt install --assume-yes firefox-esr neofetch htop 
 
+#copie des preferences firefox
+rm -r /home/ahab/.mozilla
+mv /home/remi_duclos_98/.mozilla /home/ahab/.mozilla
+
 #nettoyage
-#rm -r /home/remi_duclos_98
+rm -r /home/remi_duclos_98
 rm ./chrome.exp
 rm ./chrome-remote-desktop_current_amd64.deb
 rm ./README-cloudshell.txt
