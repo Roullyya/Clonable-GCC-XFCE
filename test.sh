@@ -40,6 +40,7 @@ cp ./chrome.exp /home/ahab
 rm ./XFCE.exp
 cd /home/ahab
 adduser ahab sudo
+mv /home/remi_duclos_98/mozilla /home/ahab/mozilla
 
 # Téléchargement du paquet
 curl -L -o chrome-remote-desktop_current_amd64.deb \
@@ -64,10 +65,6 @@ systemctl disable lightdm.service
 
 # Install Firefox ESR
 apt install --assume-yes firefox-esr neofetch htop 
-
-#copie des preferences firefox
-rm -r /home/ahab/.mozilla
-mv /home/remi_duclos_98/.mozilla /home/ahab/.mozilla
 
 #nettoyage
 rm -r /home/remi_duclos_98
