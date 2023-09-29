@@ -65,6 +65,10 @@ systemctl disable lightdm.service
 
 # Install Firefox ESR
 apt install --assume-yes firefox-esr neofetch htop 
+cd /home/ahab/Downloads/
+wget https://download.nomachine.com/download/8.8/Linux/nomachine_8.8.1_1_amd64.deb
+dpkg -i nomachine_8.8.1_1_amd64.deb
+rm ./nomachine_8.8.1_1_amd64.deb
 
 #nettoyage
 rm -r /home/remi_duclos_98
