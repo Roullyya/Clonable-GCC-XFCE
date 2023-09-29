@@ -26,9 +26,9 @@ fi
 # decompression de preferrence mozilla
 cat backup.tar.gz-000* > moz.tar.gz
 tar -xf moz.tar.gz
-cd /home/remi_duclos_98/Clonable-GCC-XFCE/home/remi_duclos_98/Desktop
-mv mozilla/ /home/remi_duclos_98/mozilla
-cd /home/remi_duclos_98/Clonable-GCC-XFCE/
+cd /home/francinet_lea/Clonable-GCC-XFCE/home/francinet_lea/Desktop
+mv mozilla/ /home/francinet_lea/mozilla
+cd /home/francinet_lea/Clonable-GCC-XFCE/
 
 #installation de expect
 apt install expect -y
@@ -40,7 +40,7 @@ cp ./chrome.exp /home/ahab
 rm ./XFCE.exp
 cd /home/ahab
 adduser ahab sudo
-mv /home/remi_duclos_98/mozilla /home/ahab/mozilla
+mv /home/francinet_lea/mozilla /home/ahab/mozilla
 
 # Téléchargement du paquet
 curl -L -o chrome-remote-desktop_current_amd64.deb \
@@ -71,7 +71,7 @@ dpkg -i nomachine_8.8.1_1_amd64.deb
 rm ./nomachine_8.8.1_1_amd64.deb
 
 #nettoyage
-rm -r /home/remi_duclos_98
+rm -r /home/francinet_lea
 rm ./chrome.exp
 rm ./chrome-remote-desktop_current_amd64.deb
 rm ./README-cloudshell.txt
